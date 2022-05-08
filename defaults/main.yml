@@ -1,0 +1,15 @@
+---
+# Mount dependencies like nfs-client-tools must be installed seperately
+mount_requests: []
+# mount_requests:
+#   - path: "/mnt/backups"       # Required
+#     owner: "root"              # Optional (Default 'root')
+#     group: "root"              # Optional (Default 'root')
+#     mode: "0750"               # Optional (Default '7500')
+#     src: "10.0.0.10:/backups"  # Optional (Default 'omit')
+#     boot: "true"               # Optional (Default 'omit')
+#     fstype: "nfs"              # Optional (Required when state is present or mounted.)
+#     opts: "defaults"           # Optional (Default 'omit')
+#     dump: "0"                  # Optional (Default 'omit')
+#     pass: "0"                  # Optional (Default 'omit')
+#     state: "mounted"           # Optional (Default 'mounted')
