@@ -1,0 +1,8 @@
+---
+#
+# Ansible managed
+#
+repository:
+  description: Configure mounts on your system
+  homepage: https://mullholland.net
+  topics: system, ansible, molecule, tox, playbook
