@@ -9,7 +9,7 @@
   with_items:
     - "{{ mount_requests }}"
 
-- name: mount requested mounts
+- name: Mount requested mounts
   ansible.posix.mount:
     boot: "{{ item.boot | default(omit) }}"
     dump: "{{ item.dump | default(omit) }}"

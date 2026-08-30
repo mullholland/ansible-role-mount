@@ -1,7 +1,6 @@
 ---
 - name: Converge
   hosts: all
-  become: true
   gather_facts: true
   vars:
     mount_requests:
@@ -12,4 +11,4 @@
         opts: "bind"
 
   roles:
-    - role: "ansible-role-mount"
+    - role: "{{ lookup('env', 'MOLECULE_PROJECT_DIRECTORY') }}"
